@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply max-w-[1120px] my-0 mx-auto px-6;
+  }
+  .title {
+    @apply font-poppins font-bold text-4xl text-dark-color;
+  }
+  .box-services {
+    @apply flex flex-col items-center text-center py-[60px] sm:px-[48px] px-8 bg-back-color border-b-4 border-b-primary-color;
+  }
+  .box-shadow {
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  }
+  .border-transition {
+    @apply border-t-[1px] border-t-primary-color
+  }
+  button {
+    @apply py-4 px-8 rounded bg-primary-color text-back-color font-dmsans hover:bg-opacity-80 hover:scale-105 transition-all duration-300
+  }
+}
